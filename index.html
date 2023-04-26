@@ -1,106 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header>
-        <nav>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#landing-section">Home</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#work-section">Work/Education</a></li>
+        <li><a href="#skills-section">Skills</a></li>
+        <li><a href="#project-section">Projects</a></li>
+        <li><a href="#testimonial-section">Testimonials</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="landing-section">
+      <div class="landing-container">
+        <h1>Liyabona Mxhalisa</h1>
+        <h2>Student & Web Developer</h2>
+        <p>Passionate about creating visually stunning web experiences</p>
+        <button>View My Work</button>
+      </div>
+    </section>
+    <section id="about-section">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <img src="/img/my-picture.jpg" alt="Profile Picture">
+        <div class="about-description">
+          <p>Hi there! I'm Liyabona, a web developer based in Cape Town, South Africa. I'm currently a student at LifeChoice Academy, where I've been developing my skills in HTML, CSS, and JavaScript. </p>
+          <p>I'm passionate about creating visually stunning web experiences that not only look great, but also function seamlessly. In my free time, I enjoy exploring new technologies and experimenting with new design concepts.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="work-section">
+      <h2>Work/Education</h2>
+      <div class="work-container">
+        <div class="work-experience">
+          <h3> Mugg & Bean Restaurant</h3>
+          <p>October 2022 - Present</p>
           <ul>
-            <li><a href="#landing-section">Home</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#work-section">Work/Education</a></li>
-            <li><a href="#skills-section">Skills</a></li>
-            <li><a href="#project-section">Projects</a></li>
-            <li><a href="#testimonial-section">Testimonials</a></li>
-            <li><a href="#contact-section">Contact</a></li>
+            <li>Providing diners with a detailed overview of specials and menu items.</li>
+            <li>Answering questions about complex dish preparation.</li>
+            <li>Ensuring personal levels of attention during the meal.</li>
           </ul>
-        </nav>
-      </header>
+        </div>
     
-      <main>
-        <section id="landing-section">
-          <h1>Liyabona Mxhalisa</h1>
-          <p>Student & Web Developer at LifeChoice Academy</p>
-          <button>View My Work</button>
-        </section>
-    
-        <section id="about-section">
-          <h2>About Me</h2>
-          <img src="/img/my-picture.jpg" alt="Profile Picture">
-          <p>I'm a student at LifeChoice Academy. I Have experience in HTML, CSS. I enjoy building learning how to build websites and applications that visually appealing.</p>
-    
-        </section>
-    
-        <section id="work-section">
-          <h2>Work/Education</h2>
-          <div class="work-experience">
-            <h3> Mugg & Bean restaurant</h3>
-            <p>October 2022 - Present</p>
-            <ul>
-              <li>Providing diners with a detailed overview of specials and menu items.</li>
-              <li>Answering questions about complex dish preparation.</li>
-              <li>Ensuring personal levels of attention during the meal.</li>
-            </ul>
-          </div>
-    
-          <div class="education">
-            <h3>CodeX Capetown BootCamp</h3>
-            <p>14 November 2022 - 25 November2022 </p>
-            <ul>
-            <li>Completed The 2-Week Coding Bootcamp in Introduction to Functions with JavaScript.</li>
-            </ul>
-            <h3>Mnceba Senior Secondary School</h3>
-            <p>January 2017 - November 2019 </p>
-            <ul>
-            <li>Completed My Senior High School earning My Matric statement.</li>
-            </ul>
-          </div>
-        </section>
-    
+        <div class="education">
+          <h3>CodeX Cape Town Bootcamp</h3>
+          <p>14 November 2022 - 25 November 2022</p>
+          <ul>
+            <li>Completed the 2-Week Coding Bootcamp in Introduction to Functions with JavaScript.</li>
+          </ul>
+          <h3>Mnceba Senior Secondary School</h3>
+          <p>January 2017 - November 2019 </p>
           <section id="skills-section">
             <h2>Skills</h2>
             <ul>
-              <li><img src="./img/html_1.png" alt="HTML icon" width="62" height="62"> HTML</li>
-              <li><img src="./img/css_1.png" alt="CSS icon" width="62" height="62"> CSS</li>
+              <li>
+                <div class="skill-container">
+                  <img src="./img/html_1.png" alt="HTML icon" width="62" height="62">
+                  <h3>HTML</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed suscipit mauris. Sed tempus nisi vel massa sagittis, eu pellentesque ipsum interdum.</p>
+                </div>
+              </li>
+              <li>
+                <div class="skill-container">
+                  <img src="./img/css_1.png" alt="CSS icon" width="62" height="62">
+                  <h3>CSS</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed suscipit mauris. Sed tempus nisi vel massa sagittis, eu pellentesque ipsum interdum.</p>
+                </div>
+              </li>
+              <li>
+                <div class="skill-container">
+                  <img src="./img/javascript_1.png" alt="JavaScript icon" width="62" height="62">
+                  <h3>JavaScript</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed suscipit mauris. Sed tempus nisi vel massa sagittis, eu pellentesque ipsum interdum.</p>
+                </div>
+              </li>
+              <li>
+                <div class="skill-container">
+                  <img src="./img/react_1.png" alt="React icon" width="62" height="62">
+                  <h3>React</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed suscipit mauris. Sed tempus nisi vel massa sagittis, eu pellentesque ipsum interdum.</p>
+                </div>
+              </li>
             </ul>
           </section>
-          
-    
-          </ul>
-        </section>
-    
-        <!--<section id="project-section">
-          <h2>Projects</h2>
-          <div class="project">
-            <img src="images/project-1.jpg" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>Implemented a responsive website for a local business using HTML, CSS, and JavaScript</p>
-            <button>View Project</button>
-          </div>
-        -->
+          <section id="project-section">
+            <h2>Projects</h2>
+            <div class="project">
+              <img src="./img/project-1.jpg" alt="Project 1">
+              <div class="project-details">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed suscipit mauris. Sed tempus nisi vel massa sagittis, eu pellentesque ipsum interdum. Nullam malesuada arcu elit, a luctus est lobortis sit amet.</p>
+                <a href="#" class="button">View Project</a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./img/project-2.jpg" alt="Project 2">
+              <div class="project-details">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed suscipit mauris. Sed tempus nisi vel massa sagittis, eu pellentesque ipsum interdum. Nullam malesuada arcu elit, a luctus est lobortis sit amet.</p>
+                <a href="#" class="button">View Project</a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="./img/project-3.jpg" alt="Project 3">
+              <div class="project-details">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed suscipit mauris. Sed tempus nisi vel massa sagitt <p>
 
-          <form
-          action="https://formspree.io/f/xwkjaagq"
-          method="POST"
-        >
-          <label>
-            Your email:
-            <input type="email" name="email">
-          </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
-          <!-- your other form fields go here -->
-          <button type="submit">Send</button>
-        </form>
-          
-</body>
-</html>
+                </body>
+                </html>
+
+  
+    
