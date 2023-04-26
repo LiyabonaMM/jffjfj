@@ -1,61 +1,48 @@
-/* Global styles */
-nav a {
-  color: black;
-}
+/* General Styles */
 
-nav a:hover {
-  color: red;
-}
-h1{
-color: black;
-}
-p{
-  color: black;
-}
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #F2F2F2;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.5;
 }
 
 a {
-  color: #444444;
+  color: #555;
   text-decoration: none;
+}
+
+a:hover {
+  color: #111;
 }
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-button {
-  background-color: #1E90FF;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
+/* Header Styles */
 
-/* Header styles */
 header {
-  background-color: #FFFFFF;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
   top: 0;
-  z-index: 999;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -64,150 +51,245 @@ nav ul {
   display: flex;
 }
 
-nav ul li {
-  margin-left: 20px;
+nav li {
+  margin-left: 1.5rem;
 }
 
-nav ul li:first-child {
-  margin-left: 0;
+nav a {
+  font-size: 1.2rem;
 }
 
-nav ul li a {
-  font-size: 18px;
-  font-weight: bold;
+nav a:hover {
+  color: #111;
 }
 
-/* Landing section styles */
+/* Landing Section Styles */
+
 #landing-section {
-  background-image: url('https://i.imgur.com/kd8DE1i.jpg');
-  background-position: center;
-  background-size: cover;
-  height: 500px;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #FFFFFF;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1574457001437-437a705869ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+  background-size: cover;
+  background-position: center center;
 }
 
 #landing-section h1 {
-  font-size: 50px;
-  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fff;
 }
 
 #landing-section p {
-  font-size: 24px;
-  margin-top: 20px;
-  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
 }
 
-/* About section styles */
+#landing-section button {
+  padding: 1rem 2rem;
+  background-color: #0077b6;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#landing-section button:hover {
+  background-color: #023e8a;
+}
+
+/* About Section Styles */
+
 #about-section {
-  padding: 100px 0;
+  background-color: #fff;
+  padding: 3rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #about-section h2 {
-  font-size: 36px;
-  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
 }
 
 #about-section img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 50px;
+  margin-bottom: 2rem;
 }
 
 #about-section p {
-  font-size: 18px;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-top: 50px;
-  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
 }
 
-/* Work/Education section styles */
+/* Work/Education Section Styles */
+
 #work-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background-color: #f5f5f5;
+  padding: 3rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #work-section h2 {
-  font-size: 36px;
-  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
 }
 
 .work-experience,
 .education {
-  margin-top: 50px;
+  margin-bottom: 2rem
+}
+/* Style the landing section */
+#landing-section {
+  background-image: url(https://picsum.photos/1920/1080); /* Add a background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  text-align: center;
 }
 
-.work-experience h3,
-.education h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+#landing-section h1 {
+  font-size: 4rem;
+  color: #fff;
+  margin: 0;
+  text-shadow: 2px 2px #000;
 }
 
-.work-experience p,
-.education p {
-  font-size: 18px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+#landing-section p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 1rem;
+  text-shadow: 2px 2px #000;
 }
 
-.work-experience ul,
-.education ul {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+#landing-section button {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #f8049c;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  box-shadow: 2px 2px #000;
 }
 
-.work-experience li,
-.education li {
-  font-size: 18px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+#landing-section button:hover {
+  background-color: #fff;
+  color: #f8049c;
+  box-shadow: none;
 }
 
-/* Skills section styles */
-#skills-section {
+/* Style the about section */
+#about-section {
+  background-color: #fff;
+  padding: 4rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-#skills-section ul {
+
+#about-section h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#about-section img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin: 2rem 0;
+}
+
+#about-section p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Style the work/education section */
+#work-section {
+  background-color: #f2f2f2;
+  padding: 4rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  list-style-type: none;
+  align-items: center;
+  text-align: center;
+}
+
+#work-section h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.work-experience, .education {
+  margin-bottom: 4rem;
+}
+
+.work-experience h3, .education h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.work-experience p, .education p {
+  font-size: 1.5rem;
+  color: #999;
+  margin-top: 1rem;
+}
+
+.work-experience ul, .education ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
-#skills-section li {
+
+.work-experience li, .education li {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #999;
+}
+
+/* Style the skills section */
+#skills-section {
+  background-color: #fff;
+  padding: 4rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 8px 0;
+  text-align: center;
+}
+
+#skills-section h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#skills-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills-section li {
+  font:bold
 }
